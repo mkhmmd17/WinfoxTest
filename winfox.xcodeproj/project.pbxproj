@@ -1,0 +1,496 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12F9641326DED41A0075464A /* AuthError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F9641226DED41A0075464A /* AuthError.swift */; };
+		5AE6FB2EA399CECE4754DCFE /* Pods_winfox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E70FDEB434AEF1D21BED50D /* Pods_winfox.framework */; };
+		DB8D3C4026E00D33002BB2A9 /* UIStoryboard + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8D3C3F26E00D33002BB2A9 /* UIStoryboard + Extension.swift */; };
+		DB8D3C4226E00D5B002BB2A9 /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB8D3C4126E00D5B002BB2A9 /* MainViewController.storyboard */; };
+		DB8D3C4426E00DD0002BB2A9 /* VerificationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB8D3C4326E00DD0002BB2A9 /* VerificationViewController.storyboard */; };
+		DB8D3C4626E00E13002BB2A9 /* LoggedViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB8D3C4526E00E13002BB2A9 /* LoggedViewController.storyboard */; };
+		DB8D3C4826E01188002BB2A9 /* LoggedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8D3C4726E01188002BB2A9 /* LoggedViewController.swift */; };
+		DB9B28F926DE64B9006EF8D4 /* UIViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9B28F826DE64B9006EF8D4 /* UIViewController + Extension.swift */; };
+		DB9B28FC26DE7B3C006EF8D4 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9B28FB26DE7B3C006EF8D4 /* AuthService.swift */; };
+		DBB6B3A126DD384F0035EFA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB6B3A026DD384F0035EFA0 /* AppDelegate.swift */; };
+		DBB6B3A326DD384F0035EFA0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB6B3A226DD384F0035EFA0 /* SceneDelegate.swift */; };
+		DBB6B3A526DD384F0035EFA0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB6B3A426DD384F0035EFA0 /* MainViewController.swift */; };
+		DBB6B3AA26DD38500035EFA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBB6B3A926DD38500035EFA0 /* Assets.xcassets */; };
+		DBB6B3AD26DD38500035EFA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBB6B3AB26DD38500035EFA0 /* LaunchScreen.storyboard */; };
+		DBB6B3B726DD4F6E0035EFA0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DBB6B3B626DD4F6E0035EFA0 /* GoogleService-Info.plist */; };
+		DBB6B3B926DD6CE10035EFA0 /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB6B3B826DD6CE10035EFA0 /* VerificationViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		12F9641226DED41A0075464A /* AuthError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthError.swift; sourceTree = "<group>"; };
+		6E70FDEB434AEF1D21BED50D /* Pods_winfox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_winfox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC3DDB0EDFC62534DC551F3A /* Pods-winfox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-winfox.release.xcconfig"; path = "Target Support Files/Pods-winfox/Pods-winfox.release.xcconfig"; sourceTree = "<group>"; };
+		C6461D83BD6DD1E772285DC9 /* Pods-winfox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-winfox.debug.xcconfig"; path = "Target Support Files/Pods-winfox/Pods-winfox.debug.xcconfig"; sourceTree = "<group>"; };
+		DB8D3C3F26E00D33002BB2A9 /* UIStoryboard + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard + Extension.swift"; sourceTree = "<group>"; };
+		DB8D3C4126E00D5B002BB2A9 /* MainViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainViewController.storyboard; sourceTree = "<group>"; };
+		DB8D3C4326E00DD0002BB2A9 /* VerificationViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VerificationViewController.storyboard; sourceTree = "<group>"; };
+		DB8D3C4526E00E13002BB2A9 /* LoggedViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoggedViewController.storyboard; sourceTree = "<group>"; };
+		DB8D3C4726E01188002BB2A9 /* LoggedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedViewController.swift; sourceTree = "<group>"; };
+		DB9B28F826DE64B9006EF8D4 /* UIViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extension.swift"; sourceTree = "<group>"; };
+		DB9B28FB26DE7B3C006EF8D4 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		DBB6B39D26DD384F0035EFA0 /* winfox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = winfox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBB6B3A026DD384F0035EFA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DBB6B3A226DD384F0035EFA0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DBB6B3A426DD384F0035EFA0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		DBB6B3A926DD38500035EFA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DBB6B3AC26DD38500035EFA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DBB6B3AE26DD38500035EFA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBB6B3B626DD4F6E0035EFA0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DBB6B3B826DD6CE10035EFA0 /* VerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewController.swift; sourceTree = "<group>"; };
+		DBB6B3BA26DD6E990035EFA0 /* winfox.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = winfox.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DBB6B39A26DD384F0035EFA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AE6FB2EA399CECE4754DCFE /* Pods_winfox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12F9641426DED4880075464A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DBB6B3AB26DD38500035EFA0 /* LaunchScreen.storyboard */,
+				DB8D3C4126E00D5B002BB2A9 /* MainViewController.storyboard */,
+				DB8D3C4326E00DD0002BB2A9 /* VerificationViewController.storyboard */,
+				DB8D3C4526E00E13002BB2A9 /* LoggedViewController.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		12F9641526DEFBAE0075464A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				12F9641226DED41A0075464A /* AuthError.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4C7621FBAC588CC5D0A9A9DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E70FDEB434AEF1D21BED50D /* Pods_winfox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB37C93E26DE42FF006648D5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DBB6B3A426DD384F0035EFA0 /* MainViewController.swift */,
+				DBB6B3B826DD6CE10035EFA0 /* VerificationViewController.swift */,
+				DB8D3C4726E01188002BB2A9 /* LoggedViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DB9B28F726DE64A8006EF8D4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DB9B28F826DE64B9006EF8D4 /* UIViewController + Extension.swift */,
+				DB8D3C3F26E00D33002BB2A9 /* UIStoryboard + Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DB9B28FA26DE7B27006EF8D4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DB9B28FB26DE7B3C006EF8D4 /* AuthService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DB9B28FE26DE7C1D006EF8D4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DBB6B3A026DD384F0035EFA0 /* AppDelegate.swift */,
+				DBB6B3A226DD384F0035EFA0 /* SceneDelegate.swift */,
+				DBB6B3A926DD38500035EFA0 /* Assets.xcassets */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		DBB6B39426DD384F0035EFA0 = {
+			isa = PBXGroup;
+			children = (
+				DBB6B39F26DD384F0035EFA0 /* winfox */,
+				DBB6B39E26DD384F0035EFA0 /* Products */,
+				F6CCBD11861D4C5AB41EC016 /* Pods */,
+				4C7621FBAC588CC5D0A9A9DE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DBB6B39E26DD384F0035EFA0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DBB6B39D26DD384F0035EFA0 /* winfox.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DBB6B39F26DD384F0035EFA0 /* winfox */ = {
+			isa = PBXGroup;
+			children = (
+				DB37C93E26DE42FF006648D5 /* ViewControllers */,
+				12F9641426DED4880075464A /* Storyboards */,
+				DB9B28FA26DE7B27006EF8D4 /* Services */,
+				12F9641526DEFBAE0075464A /* Helpers */,
+				DB9B28F726DE64A8006EF8D4 /* Extensions */,
+				DB9B28FE26DE7C1D006EF8D4 /* Support Files */,
+				DBB6B3AE26DD38500035EFA0 /* Info.plist */,
+				DBB6B3BA26DD6E990035EFA0 /* winfox.entitlements */,
+				DBB6B3B626DD4F6E0035EFA0 /* GoogleService-Info.plist */,
+			);
+			path = winfox;
+			sourceTree = "<group>";
+		};
+		F6CCBD11861D4C5AB41EC016 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C6461D83BD6DD1E772285DC9 /* Pods-winfox.debug.xcconfig */,
+				AC3DDB0EDFC62534DC551F3A /* Pods-winfox.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DBB6B39C26DD384F0035EFA0 /* winfox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBB6B3B126DD38500035EFA0 /* Build configuration list for PBXNativeTarget "winfox" */;
+			buildPhases = (
+				ECF61F0EC4E21ABA27B534E7 /* [CP] Check Pods Manifest.lock */,
+				DBB6B39926DD384F0035EFA0 /* Sources */,
+				DBB6B39A26DD384F0035EFA0 /* Frameworks */,
+				DBB6B39B26DD384F0035EFA0 /* Resources */,
+				A5A4CDEA8FFE875AF22AF855 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = winfox;
+			productName = winfox;
+			productReference = DBB6B39D26DD384F0035EFA0 /* winfox.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DBB6B39526DD384F0035EFA0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					DBB6B39C26DD384F0035EFA0 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = DBB6B39826DD384F0035EFA0 /* Build configuration list for PBXProject "winfox" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DBB6B39426DD384F0035EFA0;
+			productRefGroup = DBB6B39E26DD384F0035EFA0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DBB6B39C26DD384F0035EFA0 /* winfox */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DBB6B39B26DD384F0035EFA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB8D3C4426E00DD0002BB2A9 /* VerificationViewController.storyboard in Resources */,
+				DB8D3C4226E00D5B002BB2A9 /* MainViewController.storyboard in Resources */,
+				DBB6B3AD26DD38500035EFA0 /* LaunchScreen.storyboard in Resources */,
+				DBB6B3B726DD4F6E0035EFA0 /* GoogleService-Info.plist in Resources */,
+				DB8D3C4626E00E13002BB2A9 /* LoggedViewController.storyboard in Resources */,
+				DBB6B3AA26DD38500035EFA0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A5A4CDEA8FFE875AF22AF855 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-winfox/Pods-winfox-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-winfox/Pods-winfox-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-winfox/Pods-winfox-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECF61F0EC4E21ABA27B534E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-winfox-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DBB6B39926DD384F0035EFA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBB6B3A526DD384F0035EFA0 /* MainViewController.swift in Sources */,
+				DB9B28F926DE64B9006EF8D4 /* UIViewController + Extension.swift in Sources */,
+				DB8D3C4826E01188002BB2A9 /* LoggedViewController.swift in Sources */,
+				DBB6B3A126DD384F0035EFA0 /* AppDelegate.swift in Sources */,
+				DB9B28FC26DE7B3C006EF8D4 /* AuthService.swift in Sources */,
+				DB8D3C4026E00D33002BB2A9 /* UIStoryboard + Extension.swift in Sources */,
+				DBB6B3B926DD6CE10035EFA0 /* VerificationViewController.swift in Sources */,
+				DBB6B3A326DD384F0035EFA0 /* SceneDelegate.swift in Sources */,
+				12F9641326DED41A0075464A /* AuthError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DBB6B3AB26DD38500035EFA0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBB6B3AC26DD38500035EFA0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DBB6B3AF26DD38500035EFA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DBB6B3B026DD38500035EFA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DBB6B3B226DD38500035EFA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6461D83BD6DD1E772285DC9 /* Pods-winfox.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = winfox/winfox.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U53X87ADPB;
+				INFOPLIST_FILE = winfox/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Gelogaev.winfox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DBB6B3B326DD38500035EFA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC3DDB0EDFC62534DC551F3A /* Pods-winfox.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = winfox/winfox.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U53X87ADPB;
+				INFOPLIST_FILE = winfox/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Gelogaev.winfox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DBB6B39826DD384F0035EFA0 /* Build configuration list for PBXProject "winfox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBB6B3AF26DD38500035EFA0 /* Debug */,
+				DBB6B3B026DD38500035EFA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBB6B3B126DD38500035EFA0 /* Build configuration list for PBXNativeTarget "winfox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBB6B3B226DD38500035EFA0 /* Debug */,
+				DBB6B3B326DD38500035EFA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DBB6B39526DD384F0035EFA0 /* Project object */;
+}

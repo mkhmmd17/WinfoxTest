@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bgw-Wp-8Xd">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Verification View Controller-->
+        <scene sceneID="Qwh-gU-QGd">
+            <objects>
+                <viewController storyboardIdentifier="VerificationViewController" id="Bgw-Wp-8Xd" customClass="VerificationViewController" customModule="winfox" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fJs-Yq-uXX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="winfoxlogo" translatesAutoresizingMaskIntoConstraints="NO" id="yo1-B5-gzI">
+                                <rect key="frame" x="132" y="100" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Ind-Gm-pG5"/>
+                                    <constraint firstAttribute="height" constant="150" id="x7I-nQ-pwN"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WINFOX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AWH-kU-iOz">
+                                <rect key="frame" x="20" y="284" width="374" height="20"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите код подтверждения." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xy3-DW-xn0">
+                                <rect key="frame" x="20" y="350" width="374" height="23.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0CC-gM-UaZ">
+                                <rect key="frame" x="20" y="447.5" width="374" height="52"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="fkn-ta-Eky"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="Продолжить">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="continueBtnAction:" destination="Bgw-Wp-8Xd" eventType="touchUpInside" id="31D-xj-cIN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iSz-HE-qlU">
+                                <rect key="frame" x="100" y="519.5" width="214" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="214" id="uUs-az-e5G"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <state key="normal" title="Отправить повторно">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="resendBtnAction:" destination="Bgw-Wp-8Xd" eventType="touchUpInside" id="Juh-Ua-pxU"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6NB-cF-KUV">
+                                <rect key="frame" x="132" y="388.5" width="150" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mvU-It-Rsh"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="0CC-gM-UaZ" firstAttribute="top" secondItem="6NB-cF-KUV" secondAttribute="bottom" constant="25" id="1fV-Po-PVw"/>
+                            <constraint firstItem="Xy3-DW-xn0" firstAttribute="top" secondItem="AWH-kU-iOz" secondAttribute="bottom" constant="46" id="1zh-ca-OWi"/>
+                            <constraint firstItem="Xy3-DW-xn0" firstAttribute="leading" secondItem="mvU-It-Rsh" secondAttribute="leading" constant="20" id="3Qi-hK-WUE"/>
+                            <constraint firstItem="mvU-It-Rsh" firstAttribute="trailing" secondItem="AWH-kU-iOz" secondAttribute="trailing" constant="20" id="7f2-e1-zQa"/>
+                            <constraint firstItem="6NB-cF-KUV" firstAttribute="top" secondItem="Xy3-DW-xn0" secondAttribute="bottom" constant="15" id="DBC-ie-hS4"/>
+                            <constraint firstItem="iSz-HE-qlU" firstAttribute="centerX" secondItem="mvU-It-Rsh" secondAttribute="centerX" id="GBf-zY-R4j"/>
+                            <constraint firstItem="6NB-cF-KUV" firstAttribute="leading" secondItem="mvU-It-Rsh" secondAttribute="leading" constant="132" id="Gjf-kF-iaX"/>
+                            <constraint firstItem="mvU-It-Rsh" firstAttribute="trailing" secondItem="Xy3-DW-xn0" secondAttribute="trailing" constant="20" id="IfS-iD-rBN"/>
+                            <constraint firstItem="0CC-gM-UaZ" firstAttribute="leading" secondItem="mvU-It-Rsh" secondAttribute="leading" constant="20" id="ORe-28-J78"/>
+                            <constraint firstItem="AWH-kU-iOz" firstAttribute="leading" secondItem="mvU-It-Rsh" secondAttribute="leading" constant="20" id="OSa-R3-bVc"/>
+                            <constraint firstItem="mvU-It-Rsh" firstAttribute="trailing" secondItem="6NB-cF-KUV" secondAttribute="trailing" constant="132" id="Suh-kv-dID"/>
+                            <constraint firstItem="mvU-It-Rsh" firstAttribute="trailing" secondItem="0CC-gM-UaZ" secondAttribute="trailing" constant="20" id="a0m-B0-XIg"/>
+                            <constraint firstItem="AWH-kU-iOz" firstAttribute="top" secondItem="yo1-B5-gzI" secondAttribute="bottom" constant="34" id="dqv-hk-M9u"/>
+                            <constraint firstItem="yo1-B5-gzI" firstAttribute="top" secondItem="mvU-It-Rsh" secondAttribute="top" constant="56" id="ePO-Qs-c3Q"/>
+                            <constraint firstItem="iSz-HE-qlU" firstAttribute="top" secondItem="0CC-gM-UaZ" secondAttribute="bottom" constant="20" id="fpO-9I-eDb"/>
+                            <constraint firstItem="yo1-B5-gzI" firstAttribute="leading" secondItem="mvU-It-Rsh" secondAttribute="leading" constant="132" id="jHG-bi-TXH"/>
+                            <constraint firstItem="mvU-It-Rsh" firstAttribute="trailing" secondItem="yo1-B5-gzI" secondAttribute="trailing" constant="132" id="oSz-Iy-FKV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="YSD-pW-xY3"/>
+                    <connections>
+                        <outlet property="continueButton" destination="0CC-gM-UaZ" id="TWf-u4-CQi"/>
+                        <outlet property="resendButton" destination="iSz-HE-qlU" id="Q6T-pj-Hjd"/>
+                        <outlet property="tfOtp" destination="6NB-cF-KUV" id="gqo-c8-LDw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yED-o6-5I6" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1742.0289855072465" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="winfoxlogo" width="900" height="900"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

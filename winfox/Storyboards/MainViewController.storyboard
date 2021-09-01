@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PDm-nY-gS7">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="ede-ot-5CW">
+            <objects>
+                <viewController id="41j-JV-d8Q" customClass="MainViewController" customModule="winfox" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h5j-39-Dmg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="winfoxlogo" translatesAutoresizingMaskIntoConstraints="NO" id="jkT-V8-ZQh">
+                                <rect key="frame" x="132" y="144" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Fb5-cb-eau"/>
+                                    <constraint firstAttribute="width" constant="150" id="npy-Wt-sho"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WINFOX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fe-ym-xRb">
+                                <rect key="frame" x="20" y="328" width="374" height="20"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите ваш номер телефона." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tzI-rV-kve">
+                                <rect key="frame" x="20" y="394" width="374" height="23.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="+7(ххх)ххх-хх-хх" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Eop-0H-H0K">
+                                <rect key="frame" x="20" y="452.5" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="IPu-aI-k70"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AVB-1f-czL">
+                                <rect key="frame" x="100" y="522.5" width="214" height="52"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="3bg-DI-JTF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="Получить код">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="getCodeButtonTapped:" destination="41j-JV-d8Q" eventType="touchUpInside" id="t5S-0s-4Q8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="OlS-Gp-hZ2"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="AVB-1f-czL" firstAttribute="centerX" secondItem="OlS-Gp-hZ2" secondAttribute="centerX" id="2U1-Od-MVV"/>
+                            <constraint firstItem="0fe-ym-xRb" firstAttribute="leading" secondItem="OlS-Gp-hZ2" secondAttribute="leading" constant="20" id="GXF-uI-mkW"/>
+                            <constraint firstItem="OlS-Gp-hZ2" firstAttribute="trailing" secondItem="tzI-rV-kve" secondAttribute="trailing" constant="20" id="HwO-Pk-B07"/>
+                            <constraint firstItem="OlS-Gp-hZ2" firstAttribute="trailing" secondItem="Eop-0H-H0K" secondAttribute="trailing" constant="20" id="Rsf-KM-S1W"/>
+                            <constraint firstItem="OlS-Gp-hZ2" firstAttribute="trailing" secondItem="jkT-V8-ZQh" secondAttribute="trailing" constant="132" id="Ux1-og-7Xf"/>
+                            <constraint firstItem="AVB-1f-czL" firstAttribute="top" secondItem="Eop-0H-H0K" secondAttribute="bottom" constant="30" id="Vnq-tL-ltg"/>
+                            <constraint firstItem="jkT-V8-ZQh" firstAttribute="leading" secondItem="OlS-Gp-hZ2" secondAttribute="leading" constant="132" id="dAf-oM-uim"/>
+                            <constraint firstItem="OlS-Gp-hZ2" firstAttribute="trailing" secondItem="AVB-1f-czL" secondAttribute="trailing" constant="100" id="jWG-XJ-79l"/>
+                            <constraint firstItem="AVB-1f-czL" firstAttribute="leading" secondItem="OlS-Gp-hZ2" secondAttribute="leading" constant="100" id="msn-Gj-y2C"/>
+                            <constraint firstItem="OlS-Gp-hZ2" firstAttribute="trailing" secondItem="0fe-ym-xRb" secondAttribute="trailing" constant="20" id="qLE-jv-I8X"/>
+                            <constraint firstItem="tzI-rV-kve" firstAttribute="leading" secondItem="OlS-Gp-hZ2" secondAttribute="leading" constant="20" id="qTP-ZV-hUE"/>
+                            <constraint firstItem="jkT-V8-ZQh" firstAttribute="top" secondItem="OlS-Gp-hZ2" secondAttribute="top" constant="56" id="qZw-MZ-z8m"/>
+                            <constraint firstItem="Eop-0H-H0K" firstAttribute="top" secondItem="tzI-rV-kve" secondAttribute="bottom" constant="35" id="slV-ax-o42"/>
+                            <constraint firstItem="tzI-rV-kve" firstAttribute="top" secondItem="0fe-ym-xRb" secondAttribute="bottom" constant="46" id="wZC-ec-H2a"/>
+                            <constraint firstItem="0fe-ym-xRb" firstAttribute="top" secondItem="jkT-V8-ZQh" secondAttribute="bottom" constant="34" id="zSr-7G-Uto"/>
+                            <constraint firstItem="Eop-0H-H0K" firstAttribute="leading" secondItem="OlS-Gp-hZ2" secondAttribute="leading" constant="20" id="zja-2V-syX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="DMs-4x-NRC"/>
+                    <connections>
+                        <outlet property="getButton" destination="AVB-1f-czL" id="hrR-EP-4wJ"/>
+                        <outlet property="tfPhone" destination="Eop-0H-H0K" id="eTN-9Q-HXN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J4U-9v-Yqj" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1957.9710144927537" y="93.75"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HrG-5d-82d">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PDm-nY-gS7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jLu-RB-ZNW">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="41j-JV-d8Q" kind="relationship" relationship="rootViewController" id="wdg-tn-IuK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="prO-NI-3Ta" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="winfoxlogo" width="900" height="900"/>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
